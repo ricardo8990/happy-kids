@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:happykids/syllables.dart';
 
 class SentenceBody {
   final title;
@@ -21,7 +22,7 @@ List<SentenceBody> sentences = [
   SentenceBody(
       'El cartero', 'El cartero llevó el 📩_ a casa de mi amiga', 'sobre'),
   SentenceBody('Ella', 'Mi 👱🏻‍♀ _ terminó sus estudios', 'hermana'),
-  SentenceBody('Mar', 'En el mar se encuentra una sirena 🧜🏼‍♀ _', 'sirena'),
+  SentenceBody('Mar', 'En el mar se encuentra una 🧜🏼‍♀ _', 'sirena'),
   SentenceBody('Los alumnos', 'La 👩🏻‍🏫 _ enseña a sus alumnos', 'maestra'),
   SentenceBody('El baile', 'La 💃🏻 _ tendrá su presentación', 'bailarina'),
 ];
@@ -211,7 +212,7 @@ class _SentenceState extends State<Sentence> {
               SimpleDialogOption(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Sentence()));
+                      MaterialPageRoute(builder: (context) => Syllables()));
                 },
                 child: const Text('Siguiente reto'),
               ),
